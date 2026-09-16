@@ -1,0 +1,33 @@
+{
+  "name": "@agentlab/dsh-plugin-searchlight",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent 探照灯工作法：把「从实验到课题」的方法论做成 DSH 工具门禁 —— 噪声底线、占位三态、预注册证伪、禁止自封课题",
+  "type": "module",
+  "main": "src/tools.js",
+  "exports": {
+    ".": "./src/tools.js",
+    "./gates": "./src/core/gates.js",
+    "./store": "./src/core/store.js",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/probe.mjs"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.1.5-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": false
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,9 @@
+# 依赖与本地验证用的软链不入库
+node_modules/
+
+# 探照灯账本（运行时产物，可能含未发表的实验数据）
+.dsh-searchlight/
+
+# 编辑器与系统
+.DS_Store
+*.tmp-*
